@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta name="view-transition" content="same-origin" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Layanan — Edu Savior</title>
+    <meta
+      name="description"
+      content="Daftar layanan Edu Savior: Mendeley, Parafrase, Cek Turnitin, Pencarian Jurnal, Editing, Daftar Isi Otomatis, Pembuatan PPT."
+    />
+    <link rel="icon" href="assets/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      document.documentElement.classList.add("has-transitions");
+    </script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <img
+            src="gambar/1.png"
+            alt="Edu Savior"
+            style="width: 150px; height: 150px"
+          />
+          <span>Edu Savior</span>
+        </a>
+        <nav id="navLinks" class="nav-links">
+          <a href="index.html">Beranda</a>
+          <a href="layanan.html" aria-current="page">Layanan</a>
+          <a href="kontak.html" class="btn btn-primary btn-sm">Kontak</a>
+        </nav>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Buka menu"
+          aria-controls="navLinks"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="page-title">Layanan Edu Savior</h1>
+        <p class="section-sub">
+          Pilih sesuai kebutuhanmu. Semua layanan menjaga standar etika
+          akademik.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Mendeley</h3>
+            <p>
+              Setup kutipan & daftar pustaka otomatis (APA/IEEE/Vancouver),
+              cleaning metadata, custom style.
+            </p>
+            <ul class="features">
+              <li>Template gaya sitasi</li>
+              <li>Penomoran akurat</li>
+              <li>Export .bib/.ris</li>
+            </ul>
+            <div class="card-cta">
+              <span class="price">Mulai Rp50k</span>
+              <a class="btn btn-dark" href="kontak.html?layanan=Mendeley"
+                >Pesan</a
+              >
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Parafrase</h3>
+            <p>
+              Kurangi kemiripan tanpa mengubah makna; jaga istilah teknis & alur
+              argumen.
+            </p>
+            <ul class="features">
+              <li>Kosakata variatif</li>
+              <li>Konsistensi gaya</li>
+              <li>Jejak edit transparan</li>
+            </ul>
+            <div class="card-cta">
+              <span class="price">Mulai Rp50k/hal</span>
+              <a class="btn btn-dark" href="kontak.html?layanan=Parafrase"
+                >Pesan</a
+              >
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Cek Turnitin</h3>
+            <p>
+              Laporan persentase + highlight & saran perbaikan untuk menurunkan
+              kemiripan.
+            </p>
+            <ul class="features">
+              <li>Laporan PDF</li>
+              <li>Saran perbaikan</li>
+              <li>Ulang cek diskon</li>
+            </ul>
+            <div class="card-cta">
+              <span class="price">Mulai Rp50k</span>
+              <a class="btn btn-dark" href="kontak.html?layanan=Cek%20Turnitin"
+                >Pesan</a
+              >
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Pencarian Jurnal</h3>
+            <p>
+              Referensi relevan (Scopus/Sinta/GS), ringkasan cepat & tautan
+              sumber.
+            </p>
+            <ul class="features">
+              <li>Filter tahun & Q-index</li>
+              <li>Daftar ringkasan</li>
+              <li>File RIS/BibTeX</li>
+            </ul>
+            <div class="card-cta">
+              <span class="price">Mulai Rp100k</span>
+              <a
+                class="btn btn-dark"
+                href="kontak.html?layanan=Pencarian%20Jurnal"
+                >Pesan</a
+              >
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Editing Tugas</h3>
+            <p>
+              Proofreading ejaan, tata bahasa, format & layout sesuai panduan
+              kampus.
+            </p>
+            <ul class="features">
+              <li>Track changes</li>
+              <li>Template kampus</li>
+              <li>Garansi rapi</li>
+            </ul>
+            <div class="card-cta">
+              <span class="price">Mulai Rp100k</span>
+              <a class="btn btn-dark" href="kontak.html?layanan=Editing%20Tugas"
+                >Pesan</a
+              >
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Daftar Isi Otomatis</h3>
+            <p>
+              Struktur heading konsisten + TOC otomatis (Word/Docs) yang update
+              sekali klik.
+            </p>
+            <ul class="features">
+              <li>Heading rapi</li>
+              <li>Penomoran otomatis</li>
+              <li>Template siap pakai</li>
+            </ul>
+            <div class="card-cta">
+              <span class="price">Mulai Rp39k</span>
+              <a
+                class="btn btn-dark"
+                href="kontak.html?layanan=Daftar%20Isi%20Otomatis"
+                >Pesan</a
+              >
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Pembuatan PPT</h3>
+            <p>
+              Desain presentasi profesional, ringkas & visual kuat; konsisten
+              dengan identitas tugas.
+            </p>
+            <ul class="features">
+              <li>Template premium</li>
+              <li>Ikon & grafik</li>
+              <li>Revisi 1x</li>
+            </ul>
+            <div class="card-cta">
+              <span class="price">Mulai Rp79k</span>
+              <a class="btn btn-dark" href="kontak.html?layanan=Pembuatan%20PPT"
+                >Pesan</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footnote">
+        <p>© <span id="year"></span> Edu Savior.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

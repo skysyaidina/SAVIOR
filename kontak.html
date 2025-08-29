@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta name="view-transition" content="same-origin" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kontak — Edu Savior</title>
+    <meta
+      name="description"
+      content="Hubungi Edu Savior untuk konsultasi gratis kebutuhan layanan akademikmu."
+    />
+    <link rel="icon" href="assets/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      document.documentElement.classList.add("has-transitions");
+    </script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <img
+            src="gambar/1.png"
+            alt="Edu Savior"
+            style="width: 150px; height: 150px"
+          />
+          <span>Edu Savior</span>
+        </a>
+        <nav id="navLinks" class="nav-links">
+          <a href="index.html">Beranda</a>
+          <a href="layanan.html">Layanan</a>
+          <a
+            href="kontak.html"
+            aria-current="page"
+            class="btn btn-primary btn-sm"
+            >Kontak</a
+          >
+        </nav>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Buka menu"
+          aria-controls="navLinks"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="page-title">Konsultasi</h1>
+        <p class="section-sub">
+          Isi formulir berikut. Kami balas cepat via email/WhatsApp.
+        </p>
+
+        <form id="contactForm" class="card-xl" novalidate>
+          <div class="grid">
+            <div class="field">
+              <label for="nama">Nama</label>
+              <input
+                id="nama"
+                name="nama"
+                type="text"
+                placeholder="Nama lengkap"
+                required
+              />
+              <small class="error" data-for="nama"></small>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="email@contoh.com"
+                required
+              />
+              <small class="error" data-for="email"></small>
+            </div>
+            <div class="field">
+              <label for="whatsapp">WhatsApp (opsional)</label>
+              <input
+                id="whatsapp"
+                name="whatsapp"
+                type="tel"
+                placeholder="08xxxxxxxxxx"
+              />
+              <small class="error" data-for="whatsapp"></small>
+            </div>
+            <div class="field">
+              <label for="layananSelect">Layanan</label>
+              <select id="layananSelect" name="layanan">
+                <option value="">Pilih layanan</option>
+                <option>Mendeley</option>
+                <option>Parafrase</option>
+                <option>Cek Turnitin</option>
+                <option>Pencarian Jurnal</option>
+                <option>Editing Tugas</option>
+                <option>Daftar Isi Otomatis</option>
+                <option>Pembuatan PPT</option>
+              </select>
+              <small class="error" data-for="layananSelect"></small>
+            </div>
+            <div class="field field-full">
+              <label for="detail">Detail Kebutuhan</label>
+              <textarea
+                id="detail"
+                name="detail"
+                rows="6"
+                placeholder="Topik, jumlah halaman, deadline, panduan kampus, dll."
+                required
+              ></textarea>
+              <small class="error" data-for="detail"></small>
+            </div>
+          </div>
+
+          <div class="consent">
+            <input type="checkbox" id="consent" required />
+            <label for="consent"
+              >Saya menyetujui kebijakan privasi & etika penggunaan
+              layanan.</label
+            >
+            <small class="error" data-for="consent"></small>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Kirim</button>
+            <a id="waLink" class="btn btn-dark" target="_blank" rel="noopener"
+              >Chat WhatsApp</a
+            >
+          </div>
+          <p id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footnote">
+        <p>© <span id="year"></span> Edu Savior.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
